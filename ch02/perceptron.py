@@ -26,4 +26,4 @@ class Perceptron:
 
     
     def predict(self, x):
-        return np.where(np.dot(X, self.w_) + self.b_ >= 0.0, 1, 0)
+        return np.where((np.dot(X, self.w_) + self.b_) >= 0.0, 1, 0)
